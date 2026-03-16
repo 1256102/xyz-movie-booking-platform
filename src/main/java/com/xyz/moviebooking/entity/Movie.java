@@ -1,0 +1,15 @@
+package com.xyz.moviebooking.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Movie {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long movieId;
+
+    private String name;
+    private String language;
+    private String genre;
+}

@@ -1,0 +1,14 @@
+package com.xyz.moviebooking.entity;
+
+import jakarta.persistence.*;
+
+@Entity
+public class Theatre {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long theatreId;
+
+    private String name;
+    private String city;
+}
